@@ -28,7 +28,7 @@ namespace HolePlagin
             Document vkDoc = arDoc.Application.Documents.OfType<Document>().Where(x => x.Title.Contains("ВК")).FirstOrDefault();
             if (vkDoc == null)
             {
-                TaskDialog.Show("Ошибка", "Не найден ОВ файл");
+                TaskDialog.Show("Ошибка", "Не найден ВК файл");
                 return Result.Cancelled;
             }
 
